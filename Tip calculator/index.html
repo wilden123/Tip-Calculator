@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>My project</title>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="container">
+        <h1>Tip calculator</h1>
+        <span class="input-amount">How much was your bill?</span>
+        <br />
+        <div class="bill">
+          <input type="text" class="bill-amount" placeholder="Bill Amount" />
+        </div>
+        <br />
+        
+        <div>
+        <span>How was your service?</span>
+          <select name='service' id="services" style="display: block;">
+            <option selected disabled hidden>Select</option>
+            <option value="0.25">25% - Top Notch</option>
+            <option value="0.20">20% - Excellent</option>
+            <option value="0.15">15% - Good</option>
+            <option value="0.10">10% - Bad</option>
+            <option value="0.05">5% - Worst</option>
+          </select>
+        </div>
+          <br />
+          <span>How many people are sharing the bill?</span>
+          <br />
+          <input
+            type="text"
+            class="numberPeople"
+            placeholder="Number of people"
+          />
+          <div id="totalTip">
+            <span id="each">Each person has to pay </span>
+            <sup>$</sup><span class = 'bill-divided'></span><span> and </span>
+            <sup>$</sup><span id="tip">0.00</span>
+            <span id="each">for the tip.</span>
+          </div>
+          <button>Calculate</button>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

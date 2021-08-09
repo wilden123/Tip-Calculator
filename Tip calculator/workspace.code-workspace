@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../Login Authetication"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Tip calculator"
+  }
+}
